@@ -7,7 +7,7 @@
     "email": "alex.johnson@example.com",
     "days_since_contact": "5d ago",
     "status": "on-track",
-    "tags": ["work", "close friend"],
+    "tags": ["Work"],
     "bio": "My colleague from the design team. We collaborate on many projects.",
     "goal": 14,
     "next_due_date": "2026-04-20"
@@ -20,7 +20,7 @@
     "email": "sarah.miller@example.com",
     "days_since_contact": "12d ago",
     "status": "almost due",
-    "tags": ["college", "best friend"],
+    "tags": ["Family"],
     "bio": "We met during freshman year. She's my go-to person for advice.",
     "goal": 10,
     "next_due_date": "2026-04-18"
@@ -33,7 +33,7 @@
     "email": "michael.chen@example.com",
     "days_since_contact": "20d ago",
     "status": "overdue",
-    "tags": ["gym", "close friend"],
+    "tags": ["Work"],
     "bio": "My workout partner. We push each other to stay fit.",
     "goal": 7,
     "next_due_date": "2026-04-05"
@@ -46,7 +46,7 @@
     "email": "emily.davis@example.com",
     "days_since_contact": "2d ago",
     "status": "on-track",
-    "tags": ["neighbor", "book club"],
+    "tags": ["Travel", "Hobby"],
     "bio": "Lives next door. We share a love for mystery novels.",
     "goal": 21,
     "next_due_date": "2026-05-01"
@@ -59,7 +59,7 @@
     "email": "david.wilson@example.com",
     "days_since_contact": "8d ago",
     "status": "on-track",
-    "tags": ["university", "study group"],
+    "tags": ["Work"],
     "bio": "We studied computer science together. He's a brilliant coder.",
     "goal": 14,
     "next_due_date": "2026-04-25"
@@ -72,7 +72,7 @@
     "email": "jessica.brown@example.com",
     "days_since_contact": "15d ago",
     "status": "almost due",
-    "tags": ["art", "creative"],
+    "tags": ["Family"],
     "bio": "Fellow artist. We visit galleries and sketch together.",
     "goal": 14,
     "next_due_date": "2026-04-22"
@@ -85,7 +85,7 @@
     "email": "chris.evans@example.com",
     "days_since_contact": "25d ago",
     "status": "overdue",
-    "tags": ["high school", "old friend"],
+    "tags": ["Work"],
     "bio": "Known him since we were kids. He always has great stories.",
     "goal": 30,
     "next_due_date": "2026-04-10"
@@ -98,7 +98,7 @@
     "email": "olivia.martinez@example.com",
     "days_since_contact": "3d ago",
     "status": "on-track",
-    "tags": ["travel", "adventure"],
+    "tags": ["Travel", "Hobby"],
     "bio": "My favorite travel buddy. We've been to 5 countries together.",
     "goal": 10,
     "next_due_date": "2026-04-27"

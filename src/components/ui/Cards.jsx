@@ -24,7 +24,13 @@ const Cards = ({freind}) => {
        
         <h2 className="card-title text-center mx-6">{freind.name}</h2>
         <p className='text-center'>{freind.days_since_contact}</p>
-        <button className="bg-green-200 btn">{freind.tags}</button>
+        <div className="flex gap-2 justify-center mx-6">
+          {freind.tags && freind.tags.map((tag, index) => (
+            <button key={index} className="bg-green-200 btn btn-sm rounded-full">
+              {tag}
+            </button>
+          ))}
+        </div>
         <button className={`btn ${getStatusStyle(freind.status)} w-30 rounded-full mx-6`}> {freind.status}</button>
 
       </div>
