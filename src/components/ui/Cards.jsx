@@ -15,7 +15,7 @@ const Cards = ({freind}) => {
     }
 };
     return (
-         <Link href={`/freinds/${freind.id}`} className="card bg-base-100 shadow-sm">
+         <Link href={`/${freind.id}`} className="card bg-base-100 shadow-sm">
      
       <div className="card-body ">
         <figure>
