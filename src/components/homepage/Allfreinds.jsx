@@ -7,7 +7,9 @@ import Cards from "@/components/ui/Cards";
 
 const freindsPromise = async function () {
  
-  const res = await fetch("http://localhost:3000/freinds.json");
+  const res = await fetch("https://keep-keeper.vercel.app/freinds.json",{
+    cache:"no-store"
+});
   const freinds = await res.json();
   return freinds;
 };

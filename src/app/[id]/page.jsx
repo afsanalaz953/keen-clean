@@ -1,18 +1,18 @@
 import React from 'react';
 import { toast } from 'react-toastify';  
 import Link from "next/link";
-import { LuPhoneCall,} from "react-icons/lu";
-import { MdOutlineTextsms } from "react-icons/md";
-import { CiVideoOn } from "react-icons/ci";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { LuArchive } from "react-icons/lu";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import Image from "next/image"
+import InteractionButton from "@/components/interaction/interactionButton"
 // import Freindcards from '@/hooks/Freindcards';
 
 
 const freindsPromise = async function () {
-  const res = await fetch("http://localhost:3000/freinds.json");
+  const res = await fetch("https://keep-keeper.vercel.app/freinds.json",{
+    cache:"no-store"
+});
   const data = await res.json();
   return data;
 };
@@ -64,10 +64,10 @@ if (!friend)
 return (
   <>
  <div className='layout grid grid-cols-2 gap-4 p-20 container m-auto'>
-   <div className='left space-y-4'>
+   <div className='left space-y-2'>
     <div className='leftcard1'>
  {/* Left Column - Friend Info Card */}
-        <div className="left-info-card border-0  bg-white rounded-3xl space-y-4 text-center">
+        <div className="left-info-card border-0  bg-white rounded-3xl space-y-2 text-center">
           <Image src={friend.image} className='`w-20` h-20 mx-auto  text-center' alt="Friend" width={80} height={80} />
        
         <h1 className="info-name font-bold text-2xl">{friend.name}</h1>
@@ -150,19 +150,10 @@ return (
             <div className="checkin-card  border-0 rounded-2xl  bg-white">
             <strong className='m-4'> Quick Check-in</strong>
            <div className='grid grid-cols-3 gap-2 m-5 justify-center items-center'>
-            <button className='btn w-30 flex flex-col gap-2 h-15'>
-              <LuPhoneCall />
-              <span>Call</span>
-              </button>
-            <button className='btn w-30 flex flex-col gap-2 h-15'>
-             <MdOutlineTextsms />
-              <span>Text</span>
-            </button>
-            <button className='btn w-30 flex flex-col gap-2 h-15 '>
-               <CiVideoOn />
-              <span>Video</span>
-            </button>
-            </div>  
+                 <InteractionButton friend={friend} type="Call" />
+           <InteractionButton friend={friend} type="Text" />
+             <InteractionButton friend={friend} type="Video" />
+             </div>  
       </div>
       {/* chickencard finish */}
       
