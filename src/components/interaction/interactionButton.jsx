@@ -26,7 +26,9 @@ const InteractionButton = ({friend, type = 'Call'}) => {
     addTimelineEntry(friend.name, type);
 if (!isInstalled) {
       setInstalledFriends([...installedFriends, friend]); 
-      toast.success(`${friend.name} is successfully added to your friends!`);
+        toast.info(`${type} initiated with ${friend.name}!`); 
+} else {
+  toast.info(`${type} initiated with ${friend.name}!`);
     } 
   };
    

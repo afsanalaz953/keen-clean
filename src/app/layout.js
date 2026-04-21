@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from '@/components/shared/navbar/Navbar';
 import { ToastContainer } from 'react-toastify'; 
 import Provider from "@/app/lib/providers/index";
-import TimelineProvider from '@/context/timelinecontext';
+// import TimelineProvider from '@/context/timelinecontext';
+import Footer from "@/components/shared/footer/Footer"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +32,12 @@ export default function RootLayout({ children }) {
         
          <Provider>
           
-  <Navbar></Navbar>
-        {children}
-       <ToastContainer position="top-right" /> 
-        <h2 className="bg-blue-300"> Footer </h2>
-         
+           <Navbar></Navbar>
+            {children}
+            <ToastContainer position="top-right" /> 
+       
+            <Footer></Footer>
+            
          </Provider>
         
          
